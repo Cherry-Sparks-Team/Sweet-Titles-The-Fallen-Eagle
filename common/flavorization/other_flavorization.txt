@@ -1,0 +1,323 @@
+﻿@special_prio = 400
+
+@special_prio_low = 300
+
+@empire_government_prio = 101
+@kingdom_government_prio = 46
+@duchy_government_prio = 26
+@county_government_prio = 17
+@barony_government_prio = 6
+
+@kingdom_government_prio_ind = 47
+@duchy_government_prio_ind = 27
+@county_government_prio_ind = 18
+@barony_government_prio_ind = 7
+
+@kingdom_cultural_prio_ind = 50
+@duchy_cultural_prio_ind = 30
+@county_cultural_prio_ind = 21
+@barony_cultural_prio_ind = 10
+
+@empire_cultural_prio = 104
+@kingdom_cultural_prio = 49
+@duchy_cultural_prio = 29
+@county_cultural_prio = 20
+@barony_cultural_prio = 9
+
+@child_kingdom_prio = 7
+@child_duchy_prio = 6
+@child_county_prio = 5
+
+@councillor_empire_prio = 310
+@councillor_kingdom_prio = 300
+@councillor_duchy_prio = 299
+@councillor_county_prio = 280
+
+@empire_heritage_prio = 103
+@kingdom_heritage_prio = 48
+@duchy_heritage_prio = 28
+@county_heritage_prio = 19
+@barony_heritage_prio = 8
+
+@empire_low_heritage_prio = 102
+@kingdom_low_heritage_prio = 47
+@duchy_low_heritage_prio = 27
+@county_low_heritage_prio = 18
+@barony_low_heritage_prio = 7
+
+#City-state - title holders
+baron_citystate_male = {
+	type = character
+	gender = male
+	special = holder
+	tier = barony
+	priority = @barony_government_prio
+	top_liege = no
+	governments = { city_state_government }
+}
+baron_citystate_female = {
+	type = character
+	gender = female
+	special = holder
+	tier = barony
+	priority = @barony_government_prio
+	top_liege = no
+	governments = { city_state_government }
+}
+count_citystate_male = {
+	type = character
+	gender = male
+	special = holder
+	tier = county
+	priority = @county_government_prio
+	top_liege = no
+	governments = { city_state_government }
+}
+count_citystate_female = {
+	type = character
+	gender = female
+	special = holder
+	tier = county
+	priority = @county_government_prio
+	top_liege = no
+	governments = { city_state_government }
+}
+count_citystate_independent_male = {
+	type = character
+	gender = male
+	special = holder
+	tier = county
+	priority = @county_government_prio_ind
+	only_independent = yes
+	governments = { city_state_government }
+}
+count_citystate_independent_female = {
+	type = character
+	gender = female
+	special = holder
+	tier = county
+	priority = @county_government_prio_ind
+	only_independent = yes
+	governments = { city_state_government }
+}
+duke_citystate_male = {
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = @duchy_government_prio
+	top_liege = no
+	governments = { city_state_government }
+}
+duke_citystate_female = {
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = @duchy_government_prio
+	top_liege = no
+	governments = { city_state_government }
+}
+duke_citystate_independent_male = {
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = @duchy_government_prio_ind
+	only_independent = yes
+	governments = { city_state_government }
+}
+duke_citystate_independent_female = {
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = @duchy_government_prio_ind
+	only_independent = yes
+	governments = { city_state_government }
+}
+king_citystate_male = {
+	type = character
+	gender = male
+	special = holder
+	tier = kingdom
+	priority = @kingdom_government_prio
+	top_liege = no
+	governments = { city_state_government }
+}
+king_citystate_female = {
+	type = character
+	gender = female
+	special = holder
+	tier = kingdom
+	priority = @kingdom_government_prio
+	top_liege = no
+	governments = { city_state_government }
+}
+king_citystate_independent_male = {
+	type = character
+	gender = male
+	special = holder
+	tier = kingdom
+	priority = @kingdom_government_prio_ind
+	only_independent = yes
+	governments = { city_state_government }
+}
+king_citystate_independent_female = {
+	type = character
+	gender = female
+	special = holder
+	tier = kingdom
+	priority = @kingdom_government_prio_ind
+	only_independent = yes
+	governments = { city_state_government }
+}
+emperor_citystate_male = {
+	type = character
+	gender = male
+	special = holder
+	tier = empire
+	priority = @empire_government_prio
+	top_liege = yes
+	governments = { city_state_government }
+}
+emperor_citystate_female = {
+	type = character
+	gender = female
+	special = holder
+	tier = empire
+	priority = @empire_government_prio
+	top_liege = yes
+	governments = { city_state_government }
+}
+
+#City-state - titles
+barony_citystate = {
+	type = title
+	tier = barony
+	priority = @barony_government_prio
+	governments = { city_state_government }
+	top_liege = no
+}
+county_citystate = {
+	type = title
+	tier = county
+	priority = @county_government_prio
+	governments = { city_state_government }
+	top_liege = no
+}
+county_citystate_independent = {
+	type = title
+	tier = county
+	priority = @county_government_prio_ind
+	governments = { city_state_government }
+	only_independent = yes
+}
+duchy_citystate = {
+	type = title
+	tier = duchy
+	priority = @duchy_government_prio
+	governments = { city_state_government }
+	top_liege = no
+}
+duchy_citystate_independent = {
+	type = title
+	tier = duchy
+	priority = @duchy_government_prio_ind
+	governments = { city_state_government }
+	only_independent = yes
+}
+kingdom_citystate = {
+	type = title
+	tier = kingdom
+	priority = @kingdom_government_prio
+	governments = { city_state_government }
+	top_liege = no
+}
+kingdom_citystate_independent = {
+	type = title
+	tier = kingdom
+	priority = @kingdom_government_prio_ind
+	governments = { city_state_government }
+	only_independent = yes
+}
+empire_citystate = {
+	type = title
+	tier = empire
+	priority = @empire_government_prio
+	governments = { city_state_government }
+	top_liege = yes
+}
+
+### Petty Kingdoms
+
+common_male_duke_independent_pettyking = {
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = @duchy_cultural_prio_ind
+	only_independent = yes
+	governments = { feudal_government eranshar_government gupta_government tribal_government nomadic_government }
+	heritages = { heritage_east_germanic heritage_north_germanic heritage_west_germanic heritage_central_germanic heritage_frankish heritage_goidelic }
+}
+common_female_duke_independent_pettyking = {
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = @duchy_cultural_prio_ind
+	only_independent = yes
+	governments = { feudal_government eranshar_government gupta_government tribal_government nomadic_government }
+	heritages = { heritage_east_germanic heritage_north_germanic heritage_west_germanic heritage_central_germanic heritage_frankish heritage_goidelic }
+}
+common_duchy_independent_pettykingdom = {
+	type = title
+	tier = duchy
+	priority = @duchy_cultural_prio_ind
+	only_independent = yes
+    governments = { feudal_government eranshar_government gupta_government tribal_government nomadic_government }
+	heritages = { heritage_east_germanic heritage_north_germanic heritage_west_germanic heritage_brythonic heritage_celtic heritage_central_germanic heritage_frankish heritage_goidelic }
+}
+
+brytonic_male_duke_independent_pettyking = {
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = @duchy_cultural_prio_ind
+	only_independent = yes
+	governments = { feudal_government eranshar_government gupta_government tribal_government nomadic_government }
+	heritages = { heritage_brythonic }
+}
+brytonic_female_duke_independent_pettyking = {
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = @duchy_cultural_prio_ind
+	only_independent = yes
+	governments = { feudal_government eranshar_government gupta_government tribal_government nomadic_government }
+	heritages = { heritage_brythonic }
+}
+
+celtic_male_duke_independent_pettyking = {
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = @duchy_cultural_prio_ind
+	only_independent = yes
+	governments = { feudal_government eranshar_government gupta_government tribal_government nomadic_government }
+	heritages = { heritage_celtic }
+}
+celtic_female_duke_independent_pettyking = {
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = @duchy_cultural_prio_ind
+	only_independent = yes
+	governments = { feudal_government eranshar_government gupta_government tribal_government nomadic_government }
+	heritages = { heritage_celtic }
+}

@@ -1,0 +1,41 @@
+@special_prio = 400
+
+@special_prio_low = 300
+
+@empire_government_prio = 101
+@kingdom_government_prio = 46
+@duchy_government_prio = 26
+@county_government_prio = 17
+@barony_government_prio = 6
+
+@kingdom_cultural_prio_ind = 50
+@duchy_cultural_prio_ind = 30
+@county_cultural_prio_ind = 21
+@barony_cultural_prio_ind = 10
+
+@empire_cultural_prio = 104
+@kingdom_cultural_prio = 49
+@duchy_cultural_prio = 29
+@county_cultural_prio = 20
+@barony_cultural_prio = 9
+
+@child_kingdom_prio = 7
+@child_duchy_prio = 6
+@child_county_prio = 5
+
+@councillor_empire_prio = 310
+@councillor_kingdom_prio = 300
+@councillor_duchy_prio = 299
+@councillor_county_prio = 280
+
+@empire_heritage_prio = 103
+@kingdom_heritage_prio = 48
+@duchy_heritage_prio = 28
+@county_heritage_prio = 19
+@barony_heritage_prio = 8
+
+@empire_low_heritage_prio = 102
+@kingdom_low_heritage_prio = 47
+@duchy_low_heritage_prio = 27
+@county_low_heritage_prio = 18
+@barony_low_heritage_prio = 7

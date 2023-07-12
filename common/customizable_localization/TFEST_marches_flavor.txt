@@ -1,0 +1,510 @@
+﻿TFESTDukeFeudal = {
+    type = character
+    text = {
+        trigger = {
+            OR = {
+                vassal_contract_has_flag = has_march_contract
+                AND = {
+                    highest_held_title_tier < tier_duchy
+                    exists = primary_spouse
+					root.primary_spouse = {
+						vassal_contract_has_flag = has_march_contract
+					}
+                }
+            }
+        }
+        localization_key = tfest_marquess_default
+    }
+    text = {
+        trigger = {
+            OR = {
+                vassal_contract_has_flag = has_palatinate_contract
+            }
+        }
+        localization_key = tfest_palatine_default
+    }
+    text = {
+        fallback = yes
+        localization_key = tfest_duke_default
+    }
+}
+TFESTDuchessFeudal = {
+    type = character
+    text = {
+        trigger = {
+            OR = {
+                vassal_contract_has_flag = has_march_contract
+                AND = {
+                    highest_held_title_tier < tier_duchy
+                    exists = primary_spouse
+					root.primary_spouse = {
+						vassal_contract_has_flag = has_march_contract
+					}
+                }
+            }
+        }
+        localization_key = tfest_marchioness_default
+    }
+    text = {
+        trigger = {
+            OR = {
+                vassal_contract_has_flag = has_palatinate_contract
+            }
+        }
+        localization_key = tfest_palatine_f_default
+    }
+    text = {
+        fallback = yes
+        localization_key = tfest_duchess_default
+    }
+}
+TFESTDuchyFeudal = {
+    type = character
+    text = {
+        trigger = {
+            vassal_contract_has_flag = has_march_contract
+        }
+        localization_key = tfest_march_default
+    }
+    text = {
+        trigger = {
+            vassal_contract_has_flag = has_palatinate_contract
+        }
+        localization_key = tfest_palatinate_default
+    }
+    text = {
+        fallback = yes
+        localization_key = tfest_duchy_default
+    }
+}
+
+TFESTKingFeudal = {
+    type = character
+    text = {
+        trigger = {
+            OR = {
+                vassal_contract_has_flag = has_march_contract
+                AND = {
+                    highest_held_title_tier < tier_kingdom
+                    exists = primary_spouse
+					root.primary_spouse = {
+						vassal_contract_has_flag = has_march_contract
+					}
+                }
+            }
+        }
+        localization_key = tfest_marshall_default
+    }
+    text = {
+        trigger = {
+            OR = {
+                vassal_contract_has_flag = has_palatinate_contract
+            }
+        }
+        localization_key = tfest_archduke_default
+    }
+    text = {
+        fallback = yes
+        localization_key = tfest_king_default
+    }
+}
+TFESTQueenFeudal = {
+    type = character
+    text = {
+        trigger = {
+            OR = {
+                vassal_contract_has_flag = has_march_contract
+                AND = {
+                    highest_held_title_tier < tier_kingdom
+                    exists = primary_spouse
+					root.primary_spouse = {
+						vassal_contract_has_flag = has_march_contract
+					}
+                }
+            }
+        }
+        localization_key = tfest_marshall_f_default
+    }
+    text = {
+        trigger = {
+            OR = {
+                vassal_contract_has_flag = has_palatinate_contract
+            }
+        }
+        localization_key = tfest_archduke_f_default
+    }
+    text = {
+        fallback = yes
+        localization_key = tfest_queen_default
+    }
+}
+TFESTKingdomFeudal = {
+    type = character
+    text = {
+        trigger = {
+            vassal_contract_has_flag = has_march_contract
+        }
+        localization_key = tfest_marches_default
+    }
+    text = {
+        trigger = {
+            vassal_contract_has_flag = has_palatinate_contract
+        }
+        localization_key = tfest_archduchy_default
+    }
+    text = {
+        fallback = yes
+        localization_key = tfest_kingdom_default
+    }
+}
+
+### Imperial Flavorisation ###
+
+TFESTCountImperial = {
+    type = character
+    text = {
+        trigger = {
+            OR = {
+                vassal_contract_has_flag = has_march_contract
+                AND = {
+                    highest_held_title_tier < tier_duchy
+                    exists = primary_spouse
+					root.primary_spouse = {
+						vassal_contract_has_flag = has_march_contract
+					}
+                }
+            }
+        }
+        localization_key = tfest_count_imperial_military
+    }
+    text = {
+        fallback = yes
+        localization_key = tfest_count_imperial_civilian
+    }
+}
+TFESTCountessImperial = {
+    type = character
+    text = {
+        trigger = {
+            OR = {
+                vassal_contract_has_flag = is_imperial_military_vassal
+                AND = {
+                    highest_held_title_tier < tier_duchy
+                    exists = primary_spouse
+					root.primary_spouse = {
+						vassal_contract_has_flag = is_imperial_military_vassal
+					}
+                }
+            }
+        }
+        localization_key = tfest_countess_imperial_military
+    }
+    text = {
+        fallback = yes
+        localization_key = tfest_countess_imperial_civilian
+    }
+}
+TFESTCountyImperial = {
+    type = character
+    text = {
+        trigger = {
+            vassal_contract_has_flag = is_imperial_military_vassal
+        }
+        localization_key = tfest_county_imperial_military
+    }
+    text = {
+        fallback = yes
+        localization_key = tfest_county_imperial_civilian
+    }
+}
+
+TFESTDukeImperial = {
+    type = character
+    text = {
+        trigger = {
+            OR = {
+                vassal_contract_has_flag = has_march_contract
+                AND = {
+                    highest_held_title_tier < tier_duchy
+                    exists = primary_spouse
+					root.primary_spouse = {
+						vassal_contract_has_flag = has_march_contract
+					}
+                }
+            }
+        }
+        localization_key = tfest_duke_imperial_military
+    }
+    text = {
+        fallback = yes
+        localization_key = tfest_duke_imperial_civilian
+    }
+}
+TFESTDuchessImperial = {
+    type = character
+    text = {
+        trigger = {
+            OR = {
+                vassal_contract_has_flag = is_imperial_military_vassal
+                AND = {
+                    highest_held_title_tier < tier_duchy
+                    exists = primary_spouse
+					root.primary_spouse = {
+						vassal_contract_has_flag = is_imperial_military_vassal
+					}
+                }
+            }
+        }
+        localization_key = tfest_duchess_imperial_military
+    }
+    text = {
+        fallback = yes
+        localization_key = tfest_duchess_imperial_civilian
+    }
+}
+TFESTDuchyImperial = {
+    type = character
+    text = {
+        trigger = {
+            vassal_contract_has_flag = is_imperial_military_vassal
+        }
+        localization_key = tfest_duchy_imperial_military
+    }
+    text = {
+        fallback = yes
+        localization_key = tfest_duchy_imperial_civilian
+    }
+}
+
+TFESTKingImperial = {
+    type = character
+    text = {
+        trigger = {
+            OR = {
+                vassal_contract_has_flag = is_imperial_military_vassal
+                AND = {
+                    highest_held_title_tier < tier_kingdom
+                    exists = primary_spouse
+					root.primary_spouse = {
+						vassal_contract_has_flag = is_imperial_military_vassal
+					}
+                }
+            }
+        }
+        localization_key = tfest_king_imperial_military
+    }
+    text = {
+        fallback = yes
+        localization_key = tfest_king_imperial_civilian
+    }
+}
+TFESTQueenImperial = {
+    type = character
+    text = {
+        trigger = {
+            OR = {
+                vassal_contract_has_flag = is_imperial_military_vassal
+                AND = {
+                    highest_held_title_tier < tier_kingdom
+                    exists = primary_spouse
+					root.primary_spouse = {
+						vassal_contract_has_flag = is_imperial_military_vassal
+					}
+                }
+            }
+        }
+        localization_key = tfest_queen_imperial_military
+    }
+    text = {
+        fallback = yes
+        localization_key = tfest_queen_imperial_civilian
+    }
+}
+TFESTKingdomImperial = {
+    type = character
+    text = {
+        trigger = {
+            vassal_contract_has_flag = is_imperial_military_vassal
+        }
+        localization_key = tfest_kingdom_imperial_military
+    }
+    text = {
+        fallback = yes
+        localization_key = tfest_kingdom_imperial_civilian
+    }
+}
+
+### Roman Imperial
+TFESTCountImperialRoman = {
+    type = character
+    text = {
+        trigger = {
+            OR = {
+                vassal_contract_has_flag = has_march_contract
+                AND = {
+                    highest_held_title_tier < tier_duchy
+                    exists = primary_spouse
+					root.primary_spouse = {
+						vassal_contract_has_flag = has_march_contract
+					}
+                }
+            }
+        }
+        localization_key = tfest_count_imperial_roman_military
+    }
+    text = {
+        fallback = yes
+        localization_key = tfest_count_imperial_roman_civilian
+    }
+}
+TFESTCountessImperialRoman = {
+    type = character
+    text = {
+        trigger = {
+            OR = {
+                vassal_contract_has_flag = is_imperial_military_vassal
+                AND = {
+                    highest_held_title_tier < tier_duchy
+                    exists = primary_spouse
+					root.primary_spouse = {
+						vassal_contract_has_flag = is_imperial_military_vassal
+					}
+                }
+            }
+        }
+        localization_key = tfest_countess_imperial_roman_military
+    }
+    text = {
+        fallback = yes
+        localization_key = tfest_countess_imperial_roman_civilian
+    }
+}
+TFESTCountyImperialRoman = {
+    type = character
+    text = {
+        trigger = {
+            vassal_contract_has_flag = is_imperial_military_vassal
+        }
+        localization_key = tfest_county_imperial_roman_military
+    }
+    text = {
+        fallback = yes
+        localization_key = tfest_county_imperial_roman_civilian
+    }
+}
+
+TFESTDukeImperialRoman = {
+    type = character
+    text = {
+        trigger = {
+            OR = {
+                vassal_contract_has_flag = has_march_contract
+                AND = {
+                    highest_held_title_tier < tier_duchy
+                    exists = primary_spouse
+					root.primary_spouse = {
+						vassal_contract_has_flag = has_march_contract
+					}
+                }
+            }
+        }
+        localization_key = tfest_duke_imperial_roman_military
+    }
+    text = {
+        fallback = yes
+        localization_key = tfest_duke_imperial_roman_civilian
+    }
+}
+TFESTDuchessImperialRoman = {
+    type = character
+    text = {
+        trigger = {
+            OR = {
+                vassal_contract_has_flag = is_imperial_military_vassal
+                AND = {
+                    highest_held_title_tier < tier_duchy
+                    exists = primary_spouse
+					root.primary_spouse = {
+						vassal_contract_has_flag = is_imperial_military_vassal
+					}
+                }
+            }
+        }
+        localization_key = tfest_duchess_imperial_roman_military
+    }
+    text = {
+        fallback = yes
+        localization_key = tfest_duchess_imperial_roman_civilian
+    }
+}
+TFESTDuchyImperialRoman = {
+    type = character
+    text = {
+        trigger = {
+            vassal_contract_has_flag = is_imperial_military_vassal
+        }
+        localization_key = tfest_duchy_imperial_roman_military
+    }
+    text = {
+        fallback = yes
+        localization_key = tfest_duchy_imperial_roman_civilian
+    }
+}
+
+TFESTKingImperialRoman = {
+    type = character
+    text = {
+        trigger = {
+            OR = {
+                vassal_contract_has_flag = is_imperial_military_vassal
+                AND = {
+                    highest_held_title_tier < tier_kingdom
+                    exists = primary_spouse
+					root.primary_spouse = {
+						vassal_contract_has_flag = is_imperial_military_vassal
+					}
+                }
+            }
+        }
+        localization_key = tfest_king_imperial_roman_military
+    }
+    text = {
+        fallback = yes
+        localization_key = tfest_king_imperial_roman_civilian
+    }
+}
+TFESTQueenImperialRoman = {
+    type = character
+    text = {
+        trigger = {
+            OR = {
+                vassal_contract_has_flag = is_imperial_military_vassal
+                AND = {
+                    highest_held_title_tier < tier_kingdom
+                    exists = primary_spouse
+					root.primary_spouse = {
+						vassal_contract_has_flag = is_imperial_military_vassal
+					}
+                }
+            }
+        }
+        localization_key = tfest_queen_imperial_roman_military
+    }
+    text = {
+        fallback = yes
+        localization_key = tfest_queen_imperial_roman_civilian
+    }
+}
+TFESTKingdomImperialRoman = {
+    type = character
+    text = {
+        trigger = {
+            vassal_contract_has_flag = is_imperial_military_vassal
+        }
+        localization_key = tfest_kingdom_imperial_roman_military
+    }
+    text = {
+        fallback = yes
+        localization_key = tfest_kingdom_imperial_roman_civilian
+    }
+}

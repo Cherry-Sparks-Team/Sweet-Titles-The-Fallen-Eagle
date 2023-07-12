@@ -1,0 +1,119 @@
+﻿DuchyIndependentKingdom = {
+	type = character
+
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_kingdom
+		}
+		localization_key = tfest_duchy_default
+	}
+	text = {
+		fallback = yes
+		localization_key = common_duchy_independent_pettykingdom_default
+	}
+}
+
+DuchyIndependentImperial = {
+	type = character
+
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_kingdom
+		}
+		localization_key = tfest_duchy_imperial_civilian
+	}
+	text = {
+		fallback = yes
+		localization_key = duchy_imperial_independent_default
+	}
+}
+
+KingdomIndependentImperial = {
+	type = character
+
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_empire
+		}
+		localization_key = tfest_kingdom_imperial_civilian
+	}
+	text = {
+		fallback = yes
+		localization_key = kingdom_imperial_independent_default
+	}
+}
+
+DuchyIndependentImperialRoman = {
+	type = character
+
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_kingdom
+		}
+		localization_key = tfest_duchy_imperial_roman_civilian
+	}
+	text = {
+		fallback = yes
+		localization_key = duchy_imperial_independent_roman_default
+	}
+}
+
+KingdomIndependentImperialRoman = {
+	type = character
+
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_empire
+		}
+		localization_key = tfest_kingdom_imperial_roman_civilian
+	}
+	text = {
+		fallback = yes
+		localization_key = kingdom_imperial_independent_roman_default
+	}
+}
+
+CountyIndependentCityState = {
+	type = character
+
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_duchy
+		}
+		localization_key = county_citystate
+	}
+	text = {
+		fallback = yes
+		localization_key = county_citystate_independent_default
+	}
+}
+
+DuchyIndependentCityState = {
+	type = character
+
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_kingdom
+		}
+		localization_key = duchy_citystate
+	}
+	text = {
+		fallback = yes
+		localization_key = duchy_citystate_independent_default
+	}
+}
+
+KingdomIndependentCityState = {
+	type = character
+
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_empire
+		}
+		localization_key = kingdom_citystate
+	}
+	text = {
+		fallback = yes
+		localization_key = kingdom_citystate_independent_default
+	}
+}
